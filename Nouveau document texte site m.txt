@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site de Streaming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ff5722;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            width: 250px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff5722;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Grille des films */
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .movie-card {
+            background-color: #2a2a2a;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-poster {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .movie-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .movie-info button {
+            background-color: #ff5722;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .movie-info button:hover {
+            background-color: #ff784e;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #aaaaaa;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Films en Streaming</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher un film...">
+            <button>Rechercher</button>
+        </div>
+    </header>
+
+    <div class="movie-grid">
+        <!-- Film 1 : Shrek -->
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/39/Shrek.jpg" alt="Shrek Poster" class="movie-poster">
+            <div class="movie-info">
+                <h2>Shrek</h2>
+                <button>Voir le film</button>
+            </div>
+        </div>
+
+        <!-- Film 2 : Le Roi Lion -->
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg" alt="Le Roi Lion Poster"
+                class="movie-poster">
+            <div class="movie-info">
+                <h2>Le Roi Lion</h2>
+                <button>Voir le film</button>
+            </div>
+        </div>
+
+        <!-- Film 3 : Harry Potter à l'école des sorciers -->
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/Harry_Potter_and_the_Philosopher%27s_Stone.jpg"
+                alt="Harry Potter Poster" class="movie-poster">
+            <div class="movie-info">
+                <h2>Harry Potter à l'école des sorciers</h2>
+                <button>Voir le film</button>
+            </div>
+        </div>
+
+        <!-- Film 4 : Avengers Endgame -->
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg"
+                alt="Avengers Endgame Poster" class="movie-poster">
+            <div class="movie-info">
+                <h2>Avengers: Endgame</h2>
+                <button>Voir le film</button>
+            </div>
+        </div>
+
+        <!-- Film 5 : Inception -->
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/7/7f/Inception_ver3.jpg" alt="Inception Poster"
+                class="movie-poster">
+            <div class="movie-info">
+                <h2>Inception</h2>
+                <button>Voir le film</button>
+            </div>
+        </div>
+
+        <!-- Film 6 : Jurassic Park -->
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg" alt="Jurassic Park Poster"
+                class="movie-poster">
+            <div class="movie-info">
+                <h2>Jurassic Park</h2>
+                <button>Voir le film</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mon Site de Streaming. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>
+      
